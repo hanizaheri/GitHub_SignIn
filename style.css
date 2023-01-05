@@ -1,0 +1,213 @@
+/* set the background of the web page*/
+body {
+     background-image: url("https://www.bleepstatic.com/content/hl-images/2022/04/08/GitHub_headpic.jpg");background-size: cover;
+}
+
+/* the main part. as the instruction,their components should be row*/
+#main{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* a window for giving a user ID. the border is radius. We blur it by backdrop-filter.*/
+#getID{
+    padding: 30px;
+    margin: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba(143, 176, 234, 0.58);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+}
+
+/* Give the style of "please inter your gitHub ID"*/
+#getID_label{
+    margin-bottom: 10px;
+    background-color: rgb(4, 49, 100);
+    color: white;
+    font-family: monospace, sans-serif;
+    font_weight: bold;
+}
+
+/* We give the style of the input. user will type her/him ID in the input*/
+#input{
+    border-color: rgb(217, 22, 121);
+    padding: 6px 12px;
+    text-align: center;
+    font-family: monospace, sans-serif;
+    border-radius: 5px;
+}
+
+/* We style the place holder 'ID' */
+#input::placeholder{
+    font-family: monospace, sans-serif;
+    font-size: 15px;
+}
+
+/* Every thing about designing the button*/
+#button {
+    padding: 6px 65px;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 22, 121);
+    border-radius: 5px;
+    border: none;
+    font-family: monospace, sans-serif;
+}
+
+/* the color of the button when we move on it*/
+#button:hover{
+    background-color: rgb(211, 83, 153);
+}
+
+/* The action happens when we clicked on it*/
+#button:active {
+    transform: translateY(5px);
+}
+
+/* It is the style of 3 labels. (WrongUser, Error, local)*/
+.alert{
+    padding: 6px 85px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: monospace, sans-serif;
+    font-size: small;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+/*It is the label for when the input is not a github user*/
+#wrongUser{
+    display: none;
+    background-color: rgba(222,253,21,0.58);
+}
+
+/* It is for when an error occurs*/
+#error_label{
+    display: none;
+    background-color: red;
+}
+
+/*It is the label for when a user is in a local storage*/
+#local_label{
+    display: none;
+    background-color: rgba(48,253,9,0.58);
+}
+
+/* The style of the part which gives user information*/
+#info{
+    display: none;
+    flex-direction: column;
+    padding: 50px;
+    margin: 30px;
+    align-items: center;
+    background: rgba(143, 176, 234, 0.58);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+}
+
+/* the style of the seperator*/
+#seperator{
+    display: flex;
+    flex-direction: row;
+}
+
+/* the style of the seperator between image and bio*/
+#divimage{
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+/* Here we make a image radius*/
+#image{
+    border-radius: 100px;
+    width: 10vw;
+}
+
+/* The style of some labels like 'Name:', 'Blog:', 'Location', 'Language', 'Bio'. Because we use it for
+multiple labels, we define it in a class*/
+.text_style{
+    padding: 5px;
+    margin: 5px;
+    color:rgb(217, 22, 121);
+    font-family: monospace, sans-serif;
+    font-size: medium;
+}
+
+/* The style of the retrieved information*/
+.info_style{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: monospace, sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+/* The style of personal seperator*/
+#personal_info{
+    flex-direction: row;
+    padding: 5px;
+    margin: auto 5px 5px;
+}
+
+/*The style of the bio*/
+#bio{
+  padding: 50px;
+  margin: 30px;
+}
+
+/* id of the name response*/
+#name_response{
+    display: none;
+}
+
+/* id of the blog response*/
+#blog_response{
+    display: none;
+}
+
+/* id of the location response*/
+#location_response{
+    display: none;
+}
+
+/* id of the language response*/
+#language_response{
+    display: none;
+}
+
+/* id of the bio response*/
+#bio_response{
+    display: none
+}
+
+/* id of the label name*/
+#name_label{
+    display: none;
+}
+
+/* id of the label blog*/
+#blog_label{
+    display: none;
+}
+
+/* id of the label location*/
+#location_label{
+    display: none;
+}
+
+/* id of the label language*/
+#language_label{
+    display: none;
+}
+
+/* id of the label bio*/
+#bio_label{
+    display: none;
+}
+

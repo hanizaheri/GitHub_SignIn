@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Give the title of the web page and link the javascript and css code -->
+<head>
+    <title>midterm_project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src = "script.js"></script>
+</head>
+
+<!-- Set the Body-->
+<body>
+
+    <!-- The main part consists of the left part giving user their information and the right part getting
+    user ID -->
+    <div id="main">
+
+        <!-- Here we use some seperator to have the same structure as Question-->
+        <div id="info">
+            <div id="seperator">
+                <!-- We locate image and bio here-->
+                <div id="image_seperator">
+                    <img id="image"/>
+                        <p class="text_style" id="bio_label">Bio:</p>
+                        <div class="info_style" id="bio_response">  </div>
+                </div>
+
+                <!-- We locate name, blog, location and language here. For each item we have a label and
+                 a div which we put user info in it.-->
+                <div id="personal_info">
+                     <label class="text_style" id="name_label"> Complete Name: </label>
+                    <div class="info_style" id="name_response"> </div>
+                    <label class="text_style" id="blog_label"> Blog: </label>
+                    <div class="info_style" id="blog_response"> </div>
+                    <label class="text_style" id="location_label"> Location: </label>
+                    <div class="info_style" id="location_response"> </div>
+                    <label class="text_style" id="language_label"> Frequent Language: </label>
+                    <div class="info_style" id="language_response"> </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- It is login part. I inserted an 'input' to type the ID and a submit button.
+        when we clicked on a button, a function named 'mainFunction' runs.-->
+         <div id="getID">
+             <label id="getID_label">  please inter your GitHub ID:  </label>
+             <label for="input"> </label> <input id="input" type="text" placeholder="ID">
+
+             <button id="button" onclick="mainFunction()"> submit </button>
+             <label class="alert" id="wrongUser"> </label>
+             <label class="alert" id="error_label"> </label>
+             <label class="alert" id="local_label"> </label>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
